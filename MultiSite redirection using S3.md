@@ -196,7 +196,7 @@ To add HTTPS site redirection rules, click on View/edit rules for HTTP : 443 (HT
 
 ![img](Image/clip_image037.jpg)
 
-***Use CNAME of the ALB to configure your site(s) DNS settings
+**Use CNAME of the ALB to configure your site(s) DNS settings
 
  
 
