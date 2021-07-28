@@ -10,31 +10,34 @@ Application load balancer is a Layer 7 load balancer which allows us to specify 
 
 Create an AWS Application Load Balancer by going to EC2 management console.
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image002.jpg)
+![img](Image/clip_image002.jpg)
 
-​                                                 Select Load Balancers from EC2 Console 
-
-
-
- 
-
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image004.jpg)
-
-​                                                                      Click on Create Load Balancer
-
- 
-
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image006.jpg)
-
-​                                                 Click on Create in Application Load Balancer panel
+***Select Load Balancers from EC2 Console 
 
 
 
  
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image008.jpg)
+![img](Image/clip_image004.jpg)
 
-​                                                            Choose internet-facing
+***Click on Create Load Balancer
+
+
+
+
+ 
+
+![img](Image/clip_image006.jpg)
+
+***Click on Create in Application Load Balancer panel
+
+
+
+ 
+
+![img](Image/clip_image008.jpg)
+
+***Choose internet-facing
 
   
 
@@ -44,23 +47,27 @@ You want HTTPS site redirection also then you can add HTTPS listener by clicking
 
  
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image010.jpg)
+![img](Image/clip_image010.jpg)
 
-​                                       Only required incase you want to redirect a HTTPS website
+***Only required incase you want to redirect a HTTPS website
 
  
+ 
+ 
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image012.jpg)
+![img](Image/clip_image012.jpg)
 
-​                                                               Select at least 2 subnets
-
-
+***Select at least 2 subnets
 
 
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image014.jpg)
 
-​                                         Select a certificate matching to the site domain names
+
+
+
+![img](Image/clip_image014.jpg)
+
+***Select a certificate matching to the site domain names
 
  
 
@@ -72,71 +79,80 @@ I have chosen default VPC here but you can use a custom VPC also but make sure t
 
 
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image016.jpg)
+![img](Image/clip_image016.jpg)
 
-​                                                     Click on Create a new security group
+***Click on Create a new security group
+
+
 
  
 
 If you want HTTPS site redirection also then you can add HTTPS port: 443 whitelisting by clicking on Add Rule.
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image018.jpg)
+![img](Image/clip_image018.jpg)
 
-​                                      Only required incase you want to redirect a HTTPS website
-
-
-
- 
-
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image020.jpg)
-
-​                                                                   Create a Target and Click Next
+***Only required incase you want to redirect a HTTPS website
 
 
 
  
 
-​                            We won’t be using it but we need to give at least one target to create an ALB.
+![img](Image/clip_image020.jpg)
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image022.jpg)
-
-​                                                                 Click on Next to Review
-
- 
-
-We don’t need to register any instances to the target for site redirection. So go to the Review page and then                            Click on Create.
-
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image024.jpg)
-
-​                                      Navigate to Listeners Tab and Click on View/edit rules
+***Create a Target and Click Next
 
 
 
  
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image026.jpg)
+***We won’t be using it but we need to give at least one target to create an ALB.
 
-​                                                      Click on Insert Rule
+![img](Image/clip_image022.jpg)
 
- 
-
-​                                    Click on + icon next Rules (top-left) then click on Insert Rule.
-
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image028.jpg)
-
-​                                       Click on Add condition and then on Host is…
+***Click on Next to Review
 
  
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image030.jpg)
+We don’t need to register any instances to the target for site redirection. So go to the Review page and then Click on Create.
 
-​                              Enter your old domain in IF section and select Redirect to… in THEN section
+![img](Image/clip_image024.jpg)
+
+***Navigate to Listeners Tab and Click on View/edit rules
+
+
 
  
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image032.jpg)
+![img](Image/clip_image026.jpg)
 
-​                                              Enter details of the new domain in THEN section
+***Click on Insert Rule
+
+ 
+ 
+ 
+
+***Click on + icon next Rules (top-left) then click on Insert Rule.
+
+![img](Image/clip_image028.jpg)
+
+
+
+
+***Click on Add condition and then on Host is…
+
+ 
+
+![img](Image/clip_image030.jpg)
+
+***Enter your old domain in IF section and select Redirect to… in THEN section
+
+ 
+ 
+ 
+
+![img](Image/clip_image032.jpg)
+
+***Enter details of the new domain in THEN section
 
  
 
@@ -152,9 +168,9 @@ We can also use the above procedure for following commonly used redirects:
 
  
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image034.jpg)
+![img](Image/clip_image034.jpg)
 
-​                                                                  Path based redirection
+***Path based redirection
 
   
 
@@ -166,9 +182,9 @@ You can follow above steps to add more site redirection rules to HTTP listener.
 
 
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image036.jpg)
+![img](Image/clip_image036.jpg)
 
-​                            Click on HTTP : 443-View/edit rules to add HTTPS site redirections
+***Click on HTTP : 443-View/edit rules to add HTTPS site redirections
 
 
 
@@ -178,9 +194,9 @@ To add HTTPS site redirection rules, click on View/edit rules for HTTP : 443 (HT
 
  
 
-![img](file:///C:\Users\ADITYA~2\AppData\Local\Temp\msohtmlclip1\01\clip_image037.jpg)
+![img](Image/clip_image037.jpg)
 
-​                                     Use CNAME of the ALB to configure your site(s) DNS settings
+***Use CNAME of the ALB to configure your site(s) DNS settings
 
  
 
