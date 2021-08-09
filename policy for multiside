@@ -1,0 +1,13 @@
+[
+    {
+        "Condition": {
+            "KeyPrefixEquals": "ongraph"
+        },
+        "Redirect": {
+            "HostName": "amazon.com",
+            "HttpRedirectCode": "301",
+            "Protocol": "https",
+            "ReplaceKeyPrefixWith": ""
+        }
+    }
+]
